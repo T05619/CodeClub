@@ -18,16 +18,17 @@ h1 {
     left: 20px;
     color: #2ec730;
     font-size: 100px;
-    margin: 20px;
+    margin-left: 20px;
+    width: 500px;
 }
 
 main p {
-    position: relative;
-    left: 200px;
+    position: relative;  
     top: 20px;
-    font-size: 30px;
-    width: 800px;
+    font-size: 20px;
     color: #2ec730;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 img {
@@ -51,11 +52,8 @@ img {
 
 #Workers img {
     height: 400px;
-}
-
-#ListOne li {
-    display: inline-block;
-    margin: 0 60px;
+    position: relative;
+    left: 100px;
 }
 
 h2 {
@@ -67,21 +65,18 @@ h2 {
 #header1 {
     text-align: center;
     position: relative;
-    left: 290px;
     top: 20px;
 }
 
 #header2 {
     text-align: center;
     position: relative;
-    left: 750px;
     top: 20px;
 }
 
 #header3 {
     text-align: center;
     position: relative;
-    left: 1280px;
     top: 20px;
     margin-bottom: 100px;
 }
@@ -98,6 +93,11 @@ button {
     margin-bottom: 80px;
     border: none;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #125313;
 }
 
 footer {
@@ -109,7 +109,35 @@ footer {
 
 footer p {
     position: relative;
-    top: 15px;
+    top: 17px;
     left: 20px;
     width: 200px;
+}
+
+#Workers section div {
+    display: inline-block;
+}
+
+#header1 {
+    top: 50px;
+    left: -280px;
+    margin-bottom: 60px;
+}
+
+#header2 {
+    top: 50px;
+    left: -70px;
+    margin-bottom: 60px;
+}
+
+#header3 {
+    top: 50px;
+    left: -230px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1864px) {
+    #Photos img {
+        height: 400px !important;
+    }
 }
